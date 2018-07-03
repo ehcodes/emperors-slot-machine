@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <section class="container">
+      <section class="betSection">
+        <p> Enter your max betting funds.</p>
+        <input id="enterAmount" type="text" name="" value="">
+        <button id="submitBet" type="button" name="button">Submit</button>
+        <h2>You have $<span id="result">0</span> USD.</h2>
+
+        <p>You are betting:</p>
+        <h2>$<span id="currentBet">0</span> USD</h2>
+        <p>Between each spin make sure to place a bet for a chance to win!</p>
+        <button id="increase" type="button" name="button">+</button>
+        <button id="decrease" type="button" name="button">-</button>
+
+      </section>
+
+      <section class="slotContainer inset">
+        <header class="inset">
+          <img src="images/header.png" alt="">
+          <h1>Llama or Emperor?</h1>
+        </header>
+
+        <section class="slotBox">
+
+          <section class="slot inset">
+            <img id="slot1" src="images/one.gif" alt="">
+            <button id="reelOne" type="button" name="button">Stop</button>
+          </section>
+
+          <section class="slot inset">
+            <img id="slot2" src="images/one.gif" alt="">
+            <button id="reelTwo" type="button" name="button">Stop</button>
+          </section>
+
+          <section class="slot inset">
+            <img id="slot3" src="images/one.gif" alt="">
+            <button id="reelThree" type="button" name="button">Stop</button>
+          </section>
+
+        </section>
+
+        <section class="outset">
+          <button id="spinWheel" class ="inset" type="button" name="button">Spin the wheel!</button>
+        </section>
+
+        <h2 id="gameOver"></h2>
+        <h2 id="result"></h2>
+        <h2 id="youWin"></h2>
+        <h2 id="youLost"></h2>
+        <img class="hidden" id="picResult" src="" alt="llama or emperor?">
+
+      </section>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="js/main.js"> </script>
+  </body>
+</html>
